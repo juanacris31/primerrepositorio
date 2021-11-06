@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Barra Progreso</title>
+    <style>
+        body{
+            background: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            color : cadetblue ;
+            font-size : 16px;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+    function avanzar(){
+        var progreso = document.getElementById("progreso")
+        progreso.value +=10
+        }
+        function detener(){
+        var progreso = document.getElementById("progreso")
+        progreso.value =0
+        }
+        
+    </script>
+
+    </head>
+    <body>
+        <h1> BARRA DE PROGRESO</h1>
+        <div class="contenedor"></div>
+<progress value=10 max=100 id="progreso" class="barraStyle"></progress>
+<br>
+ <input type="button" value="Avanzar" id="avanzar" onclick="avanzar()">
+ <input type="button" value="Reiniciar" id="detener" onclick="detener()">
+
+</body>
+</html>
